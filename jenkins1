@@ -61,7 +61,7 @@ pipeline {
         stage("UploadArtifacts"){
             steps{
                  nexusArtifactUploader(
-                            nexusVersion: NEXUS_VERSION,
+                            nexusVersion: 'nexus3',
                             protocol: 'http',
                             nexusUrl: '172.31.58.72:8081',
                             groupId: 'QA',
