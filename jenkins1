@@ -58,7 +58,7 @@ pipeline {
                 }
             }
         } 
-        stage("UploadArtifacts"){
+        /* stage("UploadArtifacts"){
             steps{
                  nexusArtifactUploader(
                             nexusVersion: 'nexus3',
@@ -76,7 +76,7 @@ pipeline {
                             ]
                         )
                     } 
-        } 
+        */ } 
     }
 }
 
