@@ -1,13 +1,13 @@
 pipeline {
     agent any
     tools {
-        maven "maven3"
+        maven "MAVEN3"
     }
 
     stages {
         stage('Fetch Code') {
             steps {
-                git branch: 'vp-rem', url:'https://github.com/devopshydclub/vprofile-repo.git'
+                git branch: 'main', url:'https://github.com/devopshydclub/vprofile-repo.git'
             }
         }
 
